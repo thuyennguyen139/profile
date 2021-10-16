@@ -80,9 +80,8 @@ header{
 }
 .header-menu a:hover,
 .header-menu a:active{
-    color: #FF3D4F;
     border-bottom: 1px solid #FF3D4F;
-    font-weight: bold;
+    
 }
 
 
