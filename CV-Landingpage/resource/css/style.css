@@ -1,0 +1,547 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+p{
+    color: #6f6f6f;
+}
+.h2{
+    color:#333333;
+    font-weight: 600;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Logo */
+.header-logo{
+    margin-top: 50px;
+    margin-left: 40px;
+    display: inline-block;
+}
+.header-logo a{
+    text-decoration: none;
+    font-size: 32px;
+}
+.header-logo a span{
+    font-weight: 800;
+    color: #FF3D4F;
+    display: inline-block;
+
+}
+
+.header-logo a p{
+    color: #fff;
+    display: inline;
+    font-weight: 800;
+
+    margin-left: -7px;
+}
+/* Background */
+header{
+    background-image: linear-gradient(rgba(143, 154, 165, 0.6),rgba(20, 29, 29, 0.85)),url('../img/anh1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    background-attachment: fixed;
+
+    
+}
+
+/* Menu */
+.header-menu-detail {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 70px;
+    
+}
+
+
+.header-menu{
+
+    padding-left: 20px;
+    display: block;
+    margin-right: 30px;
+    text-align: right;
+    position: absolute;
+    top: 60px;
+    right: 0%;
+    
+}
+.header-menu a{
+    transition: .5s;
+}
+.header-menu a:hover,
+.header-menu a:active{
+    color: #FF3D4F;
+    border-bottom: 1px solid #FF3D4F;
+    font-weight: bold;
+}
+
+
+/* Phan duoi */
+
+.header-duoi{
+    text-align: center;
+
+}
+
+
+
+.header-welcom {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 220px;
+    word-spacing: 4px;
+    letter-spacing: 1.5px;
+
+
+}
+
+.header-welcom p{
+    display: inline-block;
+    padding: 5px;
+    color: #fff;
+}
+
+
+/* Amination Welcome */
+.wel{
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes welcome {
+    0% {
+        transform: translate(-200%,0%);
+        opacity: 0%;
+        text-shadow: 120%;
+        
+    }
+    
+    80%{
+        transform: translate(-50%,0%);
+        opacity: 50%;
+    }
+    100% {
+        transform: translate(0%,0%);
+        opacity: 100%;
+        
+    }
+  }
+
+
+
+/* Amination Employ */
+.emp{
+    animation-name: employer;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes employer {
+    0% {
+        transform: translate(200%,0%);
+        opacity: 0%;
+
+        
+    }
+    
+    80%{
+        transform: translate(50%,0%);
+        opacity: 50%;
+    }
+    100% {
+        transform: translate(0%,0%);
+        opacity: 100%;
+        
+    }
+  }
+
+
+.header-name{
+    
+    font-weight: bold;
+    color: #FF3D4F;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+
+}
+
+
+/* Amination Name */
+
+@keyframes name {
+    0% {
+        transform: scale(0.2);
+        opacity: 0%;
+
+        
+    }
+    
+    
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+        
+    }
+  }
+
+/* icon */
+
+
+.header-icon p{
+    margin-top: 20px;
+}
+.header-icon p span{
+    border-radius: 50%;
+    height: 150%;
+    border: 1px solid white;
+    background-size: contain;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    transition: .5s;
+}
+
+
+
+.header-icon p span i{
+    color: #fff;
+    font-size: 80%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    margin:15px;
+
+}
+
+.header-icon p span:hover,
+.header-icon p span:active{
+    background-color: #FF3D4F;
+}
+
+
+
+/* section- about */
+
+section{
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+/* titel */
+.titel{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+    font-weight: 600;
+    font-size: 32px;
+    display: inline-block;
+    line-height: 1.1;
+    border-bottom: 3px solid #FF3D4F;
+    padding-bottom: 7px;
+    transition: .5s;
+}
+
+.titel:hover{
+    color: #FF3D4F;
+}
+
+.row{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+/* Phan anh */
+.img-about{
+    width: 75%;
+    margin-left: 100px;
+    border:6px solid #6f6f6f;
+    background-color: #FF3D4F;
+    
+}
+
+/* Phan text infor */
+.about-infor{
+    text-align: left;
+    margin-top: 20px;
+    
+}
+.about-infor p{
+    line-height: 40px;
+}
+
+.about-infor h2{
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.about-infor h2:hover{
+    color: #FF3D4F;
+}
+
+/* Section skill */
+.skill{
+    background-color: #eeeeee;
+    background-size: cover;
+    
+}
+
+.skill-khung{
+    text-align: center;
+    background-size: cover;
+    border: 1px solid #ddd;
+    padding: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    transition: .5s;
+
+}
+
+.skill-icon{
+    
+    
+    margin: 10px auto;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    vertical-align: middle;
+}
+
+  
+@keyframes app-icon-spin {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+
+.icon-s{
+    display: inline-block;
+    margin: 20px ;
+    font-style: normal;
+    font-size: 15px;
+    color: #FF3D4F;
+    vertical-align: middle;
+    transition: .5s;
+    
+}
+
+.icon-s::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #6f6f6f;
+    border-radius: 50%;
+    opacity: 50%;
+    
+  } 
+
+.skill-khung:hover .icon-s::after{
+    animation: app-icon-spin infinite 5s linear;
+    opacity: 1;
+    border: 2px dashed #FF3D4F;
+}
+
+.skill-khung:hover .icon-s{
+    color: #333333;
+}
+
+
+h4{
+    color: #333333;
+
+    transition: .5s;
+}
+
+.skill-khung:hover h4{
+    color: #FF3D4F;
+    
+}
+
+.skill-khung:hover
+{
+    border: 1px solid rgba(255, 61, 79,0.5);
+}
+
+
+/* section hobby */
+
+.row-hobby{
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+  
+}
+
+
+.img-hobby{
+    width: 100%;
+    display: inline-block;
+    border: 3px solid #6f6f6f;
+    
+}
+
+.hobby-khung
+{
+   
+    position: relative;
+    display: inline-block;
+    transition: .5s;
+    margin:15px;
+    
+    
+    
+}
+.hobby-khung-nho{
+    
+    background-color: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+}
+
+.hobby-khung-nho h4{
+    color: #FF3D4F;
+    margin-top: 70px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.hobby-khung-nho p{
+    color: #fff;
+}
+
+.hobby-khung:hover .hobby-khung-nho{
+    opacity: 1;
+    animation-name: hobby-khung;
+    animation-duration: 1s;
+}
+
+@keyframes hobby-khung {
+    0% {
+        transform: scale(0.3);
+        opacity: 0%;
+
+        
+    }
+    
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+        
+    }
+  }
+
+  /* Phan orther */
+  .orther{
+      background-color: #eeeeee;
+      background-position: cover;
+  }
+  .img-orther{
+      width: 100%;
+  }
+  .row-orther{
+      display: inline-block;
+      margin: 50px;
+  }
+  .orther-khung{
+      /* border: 1px solid #6f6f6f; */
+      margin: 30px;
+      box-shadow: rgb(58 78 95 / 20%) 0 10px 16px, rgb(58 78 95 / 5%) 0 -5px 16px;
+  }
+
+
+  /* Phan contact */
+
+.contact-khung{
+    background-color: #ddd;
+    margin: 10px;
+    padding: 10px;
+    color: #333333;
+    transition: 5s;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.row-contact{
+    
+    width: 90%;
+    display: inline-block;
+}
+.contact-khung i{
+    font-size: 18px;
+    transition: .5s;
+}
+.contact-khung h4{
+    margin-top: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    transition: .5s;
+}
+
+.contact-khung p{
+    opacity: 0;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+
+.contact-khung:hover i{
+    color: #FF3D4F;
+}
+.contact-khung:hover h4{
+    color: #FF3D4F;
+}
+.contact-khung:hover p{
+    color: #FF3D4F;
+}
+.contact-khung:hover p{
+    opacity: 1;
+}
+
+.fb-ca-nhan{
+    text-decoration: none;
+}
+
+.email{
+    font-size: 90%;
+    color: #333333;
+     
+    
+}

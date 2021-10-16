@@ -1,0 +1,302 @@
+/* #group.howkteam.com -> trao đổi, hỏi đáp, thảo luận
+     #nhớ Like và Sub video youtube
+     #Code: howkteam.com
+     #Kho tài liệu: Howkteam.com/documentation
+     #Hỏi đáp tại website: howkteam.com/questions => người khác tìm lại có đáp án  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* mac dinh la 16px */
+}
+
+/* -------------------------------------------- */
+/* ------------------HEADER------------------ */
+/* ------------------------------------------------ */
+.logo{
+    width: 350px;
+    margin-left: 30px;
+    margin-top: -50px;
+    float: left;
+    
+}
+header{
+    background-image: linear-gradient(rgba(38,80,119,0.8),rgba(45,95,93,0.85)), url(../img/background4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+
+
+}
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid white;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.row{
+    width: 1404px;
+    margin-left: 100px;
+    position: relative;
+    left: -300px;
+    top: 200px;
+}
+.clearfix::affter{
+    content: " ";
+    display: table;
+    clear: both;
+}
+h1.main-nav2{
+    color: white;
+    font-size: 200%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+}
+ .btn{
+     background-color: rgb(240, 118, 4);
+     position: relative;
+     top: 130px;
+     left: 270px;
+     padding: 12px;
+     text-decoration: none;
+     border-radius: 20px;
+     margin: 0 10px;
+     color: white ;
+     display: inline-block;
+     width:190px;
+     text-align: center;
+
+ }
+
+ .about-section{
+     width: 1440px;
+     height: 700px;
+     background-color: white;
+     margin: 10px auto;
+
+ }
+ .block-section{
+     text-align: center;
+ }
+
+ .Theh2{
+     display: inline-block;
+     color: rgb(210, 105, 30);
+     text-transform: uppercase;
+     margin-top: 30px;
+ }
+ h2:after{
+     content: "";
+     display: block;
+     height: 4px;
+     width: 120px;
+     background-color: rgba(210, 105, 30, 0.8);
+     margin: 0 auto;
+     margin-top: 4px;
+ }
+ /* .Theh2:hover,
+ .Theh2:active{
+     border-bottom: 2px solid burlywood;
+ } */
+.The-p-section{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     color: #265077;
+     font-size: 120%;
+
+}
+.khunganh{
+    width: 300px;
+    position: relative;
+    filter: brightness(55%) blur(2px); 
+}
+.anh{
+    width: 300px;
+    box-shadow: 0px 10px 20px 5px #265077;
+    border-radius: 30px;
+    border: 3px solid rgba(38, 80, 119,0.3);
+    filter: brightness(55%) blur(2px); 
+}
+
+.thep-anh{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%,100%);
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.7s;
+    
+    
+}
+.khunganh:hover .thep-anh{
+    transform: translate(-50%,-100%);
+    opacity: 1;
+
+}
+.demo{
+    filter: blur(10px);
+    width: 500px;
+    filter: brightness(200%);
+}
+
+.product{
+    text-align: center;
+    background-color: whitesmoke;
+    height: 700px;
+
+    
+}
+.khungnho{
+   
+    width: 80%;
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    position: relative;
+    height: 250px;
+       
+}
+.khungnho h1{
+    text-transform: uppercase;
+    font-size: 130%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #265077;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.khung{
+    position: absolute;
+
+    left: -1%;
+}
+.product{
+    position: relative;
+}
+.price{
+    font-size: 130%;
+    color: #265077;
+}
+.icon{
+    display: inline;
+    color: #265077;
+}
+.khungnho ul li p{
+    color: tomato;
+    display: inline;
+    text-align: left;
+
+}
+.khungnho ul{
+    text-align: left;
+    list-style: none;
+    margin-left: 130px;
+}
+.khungnho .btn{
+    position:absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.duoi img{
+    width: 100px;
+}
+.khung-teminal{
+    width: 300px;
+    margin-left: 100px;
+}
+/* .teminal h2{
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+} */
+.teminal{
+    position: relative;
+}
+
+.khungto-teminal{
+    margin-top: 70px;
+    position: absolute;
+    left: 10%;
+}
+.theh2-teminal{
+    text-align: center;
+    
+}
+.teminal{
+    text-align: center;
+    background-image: linear-gradient(rgba(38,80,119,0.8),rgba(45,95,93,0.85)), url(../img/background4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.tren{
+    color: whitesmoke;
+    line-height: 140%;
+    text-align: left;
+    
+}
+.tren::before{
+    content: '\201C';
+    display: block;
+    text-align: left;
+    font-size: 30px;
+}
+.duoi img{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.duoi em{
+    color: wheat;
+    margin-left: 10px;
+    
+}
+.duoi{
+    margin-top: 20px;
+}
+body{
+    overflow-x: hidden;
+}
